@@ -9,17 +9,17 @@
     <script src='main.js'></script> -->
     <script>
         window.onload = function () {
-            var image = document.getElementById('image');
-            //image.src = 'https://placehold.co/600x300';
-            image.src = 'https://picsum.photos/640/300';
+            var button = document.querySelector("input");
+            button.onclick = function(ev) {
+                alert('click!!');
+            }
 
-            image.window = 600;
-            image.window = 300;
-            // img 객체 접근, js에서 src값과 속성을 변경
+            alert(event);
         }
     </script>
 </head>
 <body>
-    <img id="image">
+    <input type="button" value="클릭">
+    <!-- <input type="button" value="클릭" onclick="alert('click!!');"> -->
 </body>
 </html>
