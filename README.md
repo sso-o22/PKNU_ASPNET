@@ -23,4 +23,4 @@ ASP.NET 학습 리포지토리
 	
 Bootstrap 앨범사이트 클로닝
 
-<img src="" width="700">
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet01.gif?raw=true" width="700">
