@@ -17,95 +17,87 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-
-    <!-- Masonry layout library-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-    <!-- ImageLoaded library -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
     <script>
         // jQuery로 onload 방식 -> 전통 자바스크립트 방식보다 코드가 간결해서 편하다
         $(document).ready(function () {
-            var getPapers = function(){
-                for (var i = 0; i < 20; i++){
+
+            var getPapers = function() {
+                for (var i = 0; i < 40; i++){
                     $('<div class="paper">' +
-                        ' <div class="paper-holder">' +
-                        '     <img width="210" src="https://picsum.photos/400/' + random(400, 800) + '" class="paper-img">' +
-                        ' </div>' +
-                        ' <div class="paper-content align-middle">' +
-                        '     <a class="paper-link" href="#">' +
-                        '         <img src="./images/profile.gif" width="30">' +
-                        '       </a>' +
-                        '   <p class="paper-text">About me...</p>' +
-                        '</div>' +
-                        '</div>').appendTo('#paperArea');
+                      '  <div class="paper-holder">' +
+                      '    <img width="210" src="https://picsum.photos/400/' + random(400,800) + '" class="paper-img">' +
+                      '  </div>' +
+                      '  <div class="paper-content align-middle">' +
+                      '    <a class="paper-link" href="#">' +
+                      '      <img src="./images/profile.gif" width="30">' +
+                      '    </a>' +
+                      '    <p class="paper-text">About me...</p>' +
+                      '  </div>' +
+                      '</div>').appendTo('#paperArea');
                 }
             }
 
-            getPapers();    // 위의 동적으로 paper 만드는 함수를 실행
+            getPapers();    // 위의 동적으로 paper만드는 함수를 실행
 
             // 여기에 로직을 적으면 됨
             // 핀터레스트 레이아웃으로 초기화
             $('#main-section').imagesLoaded(function () {
-                $('#main-section').masonry({
+                $("#main-section").masonry({
                     itemSelector: '.paper',
                     columnWidth: 220,
-                    isAnimated: true
+                    isAnimated: true,
                 });
             });
 
-            $('#btnLight').addClass('active');      // 기본 라이트테마로 시작
+            $('#btnLight').addClass('active');  // 기본 라이트 테마로 시작
 
             // 테마변경
-            $('#btnLight').click(function (){
+            $('#btnLight').click(function () {
                 $('html').attr('data-bs-theme', 'light');
                 $(this).addClass('active');
                 $('#btnDark').removeClass('active');
                 $('#iconTheme').attr('class', 'bi bi-brightness-high-fill');
             });
-            $('#btnDark').click(function(){
+            $('#btnDark').click(function () {
                 $('html').attr('data-bs-theme', 'dark');
                 $(this).addClass('active');
                 $('#btnLight').removeClass('active');
-                $('#iconTheme').attr('class', 'bi bi-moon-stars-fill');     // Dark모드 클릭시 달 아이콘으로 변경 
-
+                $('#iconTheme').attr('class', 'bi bi-moon-stars-fill');  // 기본 아이콘 변경
             });
-
-            // 라이트박스
+            
             function showLightBox(obj){
-                var img_src = obj.getElementsByTagName('img')[0].src;   // 내가 선택한 paper의 이미지가 선택되어서 라이트박스에 나옴
-
-                $('#random-image').attr('src', img_src);
+                var img_src = obj.getElementsByTagName('img')[0].src;
+                $('#random-image').attr('src',img_src);
 
                 $('#darken-background').show();
-                $('#darken-background').css('top', $(window).scrollTop());
-                $('body').css('overflow', 'hidden');
+                $('#darken-background').css('top',$(window).scrollTop());
+                $('body').css('overflow','hidden');
             }
 
-            function hideLightBox() {
+            function hideLightBox(obj){
                 $('#darken-background').hide();
-                $('body').css('overflow', '');
+                $('body').css('overflow','');
             }
 
             $('.paper').click(function(){
                 showLightBox(this);
             });
 
-            $('#darken-background').click(function (){
+            $('#darken-background').click(function(){
                 hideLightBox();
             })
-
             $('#lightbox').click(function(event){
-                event.stopPropagation();    // darken-background에서 일어나는 이벤트는 lightbox에서 발생하지 말것
+                event.stopPropagation();
             })
         });
 
-        // min, max 사이의 값으로 랜덤하게 수를 만드는 함수
+        // min에서 max사이의 값에서 숫자를 랜덤하게 만들겠다
         function random(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+            return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-        
     </script>
     <!-- 커스터마이징 css -->
     <link rel="stylesheet" href="./css/main.css">
@@ -116,23 +108,22 @@
 
 <body>
     <!-- 테마 영역-->
-    <!-- 오른쪽아래 바닥 테마변경 아이콘영역 -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle z-3">
-        <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center"
-                data-bs-toggle="dropdown" id="bd-theme" type="button">
+        <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown"
+            id="bd-theme" type="button">
             <i id="iconTheme" class="bi bi-brightness-high-fill"></i>
         </button>
         <ul class="dropdown-menu">
             <li>
                 <button id="btnLight" type="button" class="dropdown-item d-flex align-items-center"
-                        data-bs-theme-value="light" aria-pressed="true">
-                    <i class="bi bi-brightness-high-fill"></i>&nbsp; Light
+                    data-bs-theme-value="light" aria-pressed="true">
+                    <i class="bi bi-brightness-high-fill"></i>&nbsp;Light
                 </button>
             </li>
             <li>
                 <button id="btnDark" type="button" class="dropdown-item d-flex align-items-center"
-                data-bs-theme-value="dark" aria-pressed="false">
-                    <i class="bi bi-moon-stars-fill"></i>&nbsp; Dark
+                    data-bs-theme-value="dark" aria-pressed="false">
+                    <i class="bi bi-moon-stars-fill"></i>&nbsp;Dark
                 </button>
             </li>
         </ul>
@@ -144,6 +135,8 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                     <img src="./images/pinterest.png" width="24">
+                    <use xlink:href="#bootstrap" />
+                    </svg>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -178,7 +171,7 @@
 
     <!-- Main 영역 -->
     <div id="main-section">
-        <div class="container " id="paperArea">
+        <div class="container" id="paperArea">
             <!-- Bootstrap Card 대신 Paper -->
             <!-- <div class="paper">
                 <div class="paper-holder">
@@ -190,7 +183,7 @@
                     </a>
                     <p class="paper-text">About me...</p>
                 </div>
-            </div> 동적으로 만들시에 필요없는 소스-->
+            </div> -->
 
         </div>
     </div>
@@ -216,6 +209,4 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
-</body>
-
-</html>
+</body
