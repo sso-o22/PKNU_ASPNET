@@ -28,3 +28,12 @@ Bootstrap 앨범사이트 클로닝
 핀터레스트스타일 페이지 클로닝
 
 <img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet02.gif?raw=true" width="700">
+
+## 4일차
+- ASP.NET MVC
+	- ASP.NET 기본
+	- ASP.NET 프로젝트 
+	
+ASP.NET Core 
+
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet03.gif?raw=true" width="700">
