@@ -34,6 +34,12 @@ Bootstrap 앨범사이트 클로닝
 	- ASP.NET 기본
 	- ASP.NET 프로젝트 
 	
-ASP.NET Core 
+ASP.NET Core MVC 게시판
 
-<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet03.gif?raw=true" width="700">
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet03.png?raw=true" width="700">
+
+## 5일차
+- ASP.NET MVC	
+	- 게시판 페이징까지
+	
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet04.gif?raw=true" width="700">
