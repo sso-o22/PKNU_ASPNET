@@ -66,6 +66,18 @@ ASP.NET Core MVC 게시판
 - ASP.NET Core MVC
 	- 부트스트랩 테마(SEO Dream)적용
 	
-- ASP.NET RestAPI(jQuery, WPF)
-- 개인포트폴리오
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet06.gif?raw=true" width="700">
+	
+## 9일차
+- ASP.NET Core MVC
+	- SEO Dream 테마 완료
+- ASP.NET RestAPI
+	- RestAPI Server
+	- WPF Client
+
+## 10일차
+- ASP.NET RestAPI
+	- RestAPI Server
+	- WPF Client
+- 개인 포트폴리오 웹
 	- 부트스트랩 테마 재적용
