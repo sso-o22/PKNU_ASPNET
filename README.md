@@ -78,7 +78,7 @@ ASP.NET Core MVC 게시판
 	
 SEO Theme 완료
 
-<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet07.gif?raw=true" width="700">
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/aspnet07.png?raw=true" width="700">
 
 ## 10일차
 - ASP.NET RestAPI
