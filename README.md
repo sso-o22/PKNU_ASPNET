@@ -92,3 +92,8 @@ SEO Theme 완료
 - ASP.NET RestAPI
 	- RestAPI Server 체크
 	- FrontEnd Server
+	
+## 12일차
+- ASP.NET RestAPI
+	- RestAPI Server 체크
+	- FrontEnd Server

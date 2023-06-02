@@ -32,7 +32,7 @@
 </head>
 <body>
     <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
+@*    <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
             <span class="dot"></span>
             <div class="dots">
@@ -41,14 +41,14 @@
                 <span></span>
             </div>
         </div>
-    </div>
+    </div>*@
     <!-- ***** Preloader End ***** -->
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+@*    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="col-12">*@
+    <nav class="navbar navbar-expand-lg bg-header text-uppercase fixed-top" id="mainNav">
                         <div class="container">
                             <a class="navbar-brand" href="#page-top">IoT 포트폴리오</a>
                             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
                                         </li>
                                         <li class="nav-item mx-0 mx-lg-1">
                                             <form asp-controller="Account" asp-action="Logout" method="post">
-                                                <button type="submit" class="btn btn-link nav-link py-3 px-0 px-lg-3 rounded">@userManager.GetUserName(User)</button>
+                                                <button type="submit" class="btn btn-link nav-link py-3 px-0 px-lg-3 rounded" style="color:white">@userManager.GetUserName(User)</button>
                                             </form>
                                         </li>
                                     }
@@ -101,10 +101,10 @@
                             </div>
                         </div>
                     </nav>
-                </div>
+@*                </div>
             </div>
         </div>
-    </header>
+    </header>*@
     <!-- ***** Header Area End ***** -->
     
 
@@ -116,35 +116,35 @@
     </div>
 
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer text-center bg-header">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
+                @*<div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Copyright</h4>
                     <p class="lead mb-0">
                         Copyright © 2023 PKNU AC.,
                         <br />
                         Ltd. All Rights Reserved.
                     </p>
-                </div>
+                </div>*@
                 <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                <div class="align-content-center">
+                    <h4 class="text-uppercase mb-4 text-center">Around the Web</h4>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
                 </div>
                 <!-- Footer About Text-->
-                <div class="col-lg-4">
+                @*<div class="col-lg-4">
                     <h4 class="text-uppercase mb-4">About Freelancer</h4>
                     <p class="lead mb-0">
                         Freelance is a free to use, MIT licensed Bootstrap theme created by
                         <a href="http://startbootstrap.com">Start Bootstrap</a>
                         .
                     </p>
-                </div>
+                </div>*@
             </div>
         </div>
     </footer>
