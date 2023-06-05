@@ -110,3 +110,6 @@ RestAPI사용 FrontEnd Web
 	
 RestAPI사용 WPF App 및 Web화면
 <img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/restapi03.png?raw=true" width="700">
+
+개인포트폴리오
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/portfolio.gif?raw=true" width="700">
