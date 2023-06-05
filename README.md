@@ -93,7 +93,8 @@ SEO Theme 완료
 	- RestAPI Server 체크
 	- FrontEnd Server
 	
-개인포트폴리오
+개인포트폴리오 완성
+
 <img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/portfolio.gif?raw=true" width="700">
 	
 ## 12일차
@@ -102,6 +103,7 @@ SEO Theme 완료
 	- FrontEnd Server
 	
 RestAPI사용 FrontEnd Web
+
 <img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/restapi02.png?raw=true" width="700">
 	
 ## 13일차
@@ -109,7 +111,6 @@ RestAPI사용 FrontEnd Web
 	- WPF 앱 연동
 	
 RestAPI사용 WPF App 및 Web화면
+
 <img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/restapi03.png?raw=true" width="700">
 
-개인포트폴리오
-<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/portfolio.gif?raw=true" width="700">
