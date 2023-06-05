@@ -93,6 +93,9 @@ SEO Theme 완료
 	- RestAPI Server 체크
 	- FrontEnd Server
 	
+개인포트폴리오
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/portfolio.gif?raw=true" width="700">
+	
 ## 12일차
 - ASP.NET RestAPI
 	- RestAPI Server 체크
