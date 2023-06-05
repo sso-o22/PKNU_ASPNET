@@ -97,3 +97,13 @@ SEO Theme 완료
 - ASP.NET RestAPI
 	- RestAPI Server 체크
 	- FrontEnd Server
+	
+RestAPI사용 FrontEnd Web
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/restapi02.png?raw=true" width="700">
+	
+## 13일차
+- ASP.NET RestAPI
+	- WPF 앱 연동
+	
+RestAPI사용 WPF App 및 Web화면
+<img src="https://github.com/sso-o22/PKNU_ASPNET/blob/main/images/restapi03.png?raw=true" width="700">
